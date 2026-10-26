@@ -1,0 +1,236 @@
+
+/* WHOLE PAGE */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    min-height: 100dvh;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #faf9fb,
+        #f04fc3,
+        #f7f7f7
+    );
+}
+
+/* YOUR NAME */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 43px;
+    color: #ffffff;
+    text-shadow: 0 0 8px #ff00ff;
+}
+
+header h2 {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+/* MAIN BOX */
+.card {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+
+    background: rgba(80, 0, 70, 0.35);
+    border: 2px solid #ff69d4;
+    border-radius: 20px;
+
+    box-shadow: 0 0 25px rgba(255, 20, 147, 0.4);
+}
+
+/* HYMN TITLE */
+fieldset {
+    border: 2px solid #ffb3e6;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+fieldset h2 {
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 8px #a60085;
+}
+
+/* VERSES */
+.verse {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 25px 0;
+    padding: 22px;
+    line-height: 1.9;
+    text-align: center;
+    color: #ffffff;
+
+    background: rgba(50, 0, 40, 0.3);
+    border-radius: 12px;
+}
+
+/* CHORUS */
+.chorus {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 25px 0;
+    padding: 25px;
+    line-height: 1.9;
+    text-align: center;
+    color: #ffffff;
+
+    background: rgba(80, 0, 60, 0.35);
+    border: 2px solid #ffb3e6;
+    border-radius: 15px;
+
+    box-shadow: 0 0 12px rgba(100, 0, 80, 0.3);
+}
+
+/* CENTER BOTH PICTURES */
+.pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 30px auto;
+}
+
+/* CITY LOGO */
+.city-logo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* CITY PICTURE */
+.city-pic {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #ff69d4;
+    box-shadow: 0 0 15px #ff1493;
+}
+
+/* SMALL SCREENS */
+@media (max-width: 600px) {
+    .pictures {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .city-logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .city-pic {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+/* CITY LOGO */
+.right-pic {
+    display: block;
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 20px auto;
+
+    border: 2px solid #ff69d4;
+    border-radius: 15px;
+    box-shadow: 0 0 18px #ff1493;
+}
+
+/* SCROLLABLE LYRICS */
+.lyrics {
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+/* PINK SCROLLBAR */
+.lyrics::-webkit-scrollbar {
+    width: 10px;
+}
+
+.lyrics::-webkit-scrollbar-thumb {
+    background: #ff69d4;
+    border-radius: 10px;
+}
+
+.lyrics::-webkit-scrollbar-track {
+    background: #3b1035;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 35px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/* BUTTONS */
+button {
+    font-size: 18px;
+    padding: 14px 24px;
+    color: white;
+    background: #a60085;
+    border: 2px solid #ffb3e6;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff1493;
+    box-shadow: 0 0 15px #ff1493;
+}
+
+/* SMALL SCREENS */
+@media (max-width: 650px) {
+    body {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    fieldset {
+        padding: 12px;
+    }
+
+    fieldset h2 {
+        font-size: 28px;
+    }
+
+    .verse {
+        font-size: 20px;
+        padding: 14px;
+    }
+
+    .chorus {
+        font-size: 21px;
+        padding: 16px;
+    }
+}
